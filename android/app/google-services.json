@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "148815147041",
+    "project_id": "dumy-4bafe",
+    "storage_bucket": "dumy-4bafe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148815147041:android:70a5bb1255aca1d9243360",
+        "android_client_info": {
+          "package_name": "com.yousuf.firebasebackend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG16L0wMF5KVN3QgjqeAYvnEwfq8boKnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

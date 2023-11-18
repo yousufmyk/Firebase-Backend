@@ -2,11 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebasebackend/Firestore/add_firestore_data.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_database/firebase_database.dart';
-import 'package:firebase_database/ui/firebase_animated_list.dart';
 
 import 'package:firebasebackend/ui/auth/loginScreen.dart';
-import 'package:firebasebackend/ui/posts/add_posts.dart';
 import 'package:firebasebackend/utils/utils.dart';
 
 class FireStoreScreen extends StatefulWidget {
@@ -20,6 +17,8 @@ class _FireStoreScreenState extends State<FireStoreScreen> {
   final auth = FirebaseAuth.instance;
   final editControler = TextEditingController();
   final fireStore = FirebaseFirestore.instance.collection('user').snapshots();
+  CollectionReference ref = FirebaseFirestore.instance.collection('user');
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,8 +63,32 @@ class _FireStoreScreenState extends State<FireStoreScreen> {
                           itemCount: snapshot.data!.docs.length,
                           itemBuilder: (context, index) {
                             return ListTile(
-                              title: Text(snapshot.data!.docs[index]['title']
-                                  .toString()),
+                              onTap: () {
+                                //this is to update the data
+                                // ref.doc(snapshot.data!.docs[index]['id']
+                                //   .toString()).update({
+                                //     'title': 'This is yousuf'
+                                //   }).then((value){
+                                //     Utils().sucesstoastMessage('Updated');
+                                //   }).onError((error, stackTrace) {
+                                //     Utils().toastMessage(error.toString());
+                                //   });
+
+                                //this is to remove the data
+
+                                ref
+                                    .doc(
+                                      snapshot.data!.docs[index]['id']
+                                          .toString(),
+                                    )
+                                    .delete();
+                              },
+                              title: Text(
+                                snapshot.data!.docs[index]['title'].toString(),
+                              ),
+                              subtitle: Text(
+                                snapshot.data!.docs[index]['id'].toString(),
+                              ),
                             );
                           }));
                 })

@@ -47,7 +47,7 @@ A mobile app leveraging Firebase for user authentication, storage, and realtime 
    ```
    flutter pub get
    ```
-. Install dependencies for IOS
+ . Install dependencies for IOS
 
    ```
    cd ios

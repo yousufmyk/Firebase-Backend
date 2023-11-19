@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebasebackend/Widgets/roundButton.dart';
 import 'package:firebasebackend/ui/auth/loign_with_phone_number.dart';
 import 'package:firebasebackend/ui/auth/signupScreen.dart';
+import 'package:firebasebackend/ui/posts/forgot_password.dart';
 import 'package:firebasebackend/ui/posts/post_screen.dart';
 import 'package:firebasebackend/utils/utils.dart';
 import 'package:flutter/material.dart';
@@ -127,6 +128,17 @@ class _LoginScreenState extends State<LoginScreen> {
                   }
                 },
               ),
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const ForgotPasswordScreen()));
+                        },
+                        child: const Text('Forgot Password?')),
+              ),
               const SizedBox(
                 height: 30,
               ),
@@ -141,7 +153,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             MaterialPageRoute(
                                 builder: (context) => const SignupScreen()));
                       },
-                      child: const Text('Sign up'))
+                      child: const Text('Sign up')),
                 ],
               ),
               const SizedBox(

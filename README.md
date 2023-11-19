@@ -6,7 +6,7 @@ A mobile app leveraging Firebase for user authentication, storage, and realtime 
 
 ## Screenshots
 
-<img src="assets/images/Screenshot_2023-11-19_at_11.24.07_PM-removebg-preview.png" width="200" height="400"> <img src="assets/images/Screenshot_2023-11-19_at_11.24.07_PM-removebg-preview.png" width="200" height="400"> 
+<img src="assets/images/Screenshot_2023-11-19_at_11.24.07_PM-removebg-preview.png" width="200" height="400"> <img src="assets/images/Screenshot_2023-11-19_at_11.24.36_PM-removebg-preview.png" width="200" height="400"> <img src="assets/images/Screenshot_2023-11-19_at_11.27.45_PM-removebg-preview.png" width="200" height="400"> <img src="assets/images/Screenshot_2023-11-19_at_11.28.33_PM-removebg-preview.png" width="200" height="400"> <img src="assets/images/Screenshot_2023-11-19_at_11.28.52_PM-removebg-preview.png" width="200" height="400"> 
 
 ## Features
 
@@ -76,4 +76,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by [Mohamed Yousuf]

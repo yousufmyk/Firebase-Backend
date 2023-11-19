@@ -2,7 +2,7 @@
 
 # Firebase App
 
-A mobile app leveraging Firebase for user authentication, storage, and realtime database.
+Developed a mobile app leveraging Firebase for user authentication, storage, and realtime database. Implemented sign up and login flows with Firebase Auth, uploaded images to Firebase Storage, and synced data across clients using the Firebase Realtime Database.
 
 ## Screenshots
 

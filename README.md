@@ -6,7 +6,7 @@ A mobile app leveraging Firebase for user authentication, storage, and realtime 
 
 ## Screenshots
 
-<img src="assets/images/appScreenshot.png" width="1000" height="400"> 
+<img src="assets/images/Screenshot_2023-11-19_at_11.24.07_PM-removebg-preview.png" width="200" height="400"> <img src="assets/images/Screenshot_2023-11-19_at_11.24.07_PM-removebg-preview.png" width="200" height="400"> 
 
 ## Features
 
